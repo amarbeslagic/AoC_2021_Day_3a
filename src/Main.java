@@ -73,12 +73,12 @@ public class Main {
 
             if(intArray[i] >= 500)
             {
-                gamma = gamma + "1";
-                epsilon = epsilon + "0";
+                gamma = new StringBuilder().append(gamma).append("1").toString();
+                epsilon = new StringBuilder().append(epsilon).append("0").toString();
             }
             else {
-                gamma = gamma + "0";
-                epsilon = epsilon + "1";
+                gamma = new StringBuilder().append(gamma).append("0").toString();
+                epsilon = new StringBuilder().append(epsilon).append("1").toString();
             }
         }
 
